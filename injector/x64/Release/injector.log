@@ -1,0 +1,7 @@
+﻿  dllmain.cpp
+     Creating library C:\Users\ikop\source\repos\injector\x64\Release\injector.lib and object C:\Users\ikop\source\repos\injector\x64\Release\injector.exp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 2 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  injector.vcxproj -> C:\Users\ikop\source\repos\injector\x64\Release\injector.dll
