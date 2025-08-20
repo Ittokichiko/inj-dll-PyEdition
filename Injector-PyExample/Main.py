@@ -14,4 +14,6 @@ def main():
             raise Exception("Not Founded {}".format(proc.info['name']))
 
 if __name__ == "__main__":
-    main()    
+
+    main()
+    ex_function(344)
