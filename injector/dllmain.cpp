@@ -1,6 +1,4 @@
-// dllmain.cpp : Defines the entry point for the DLL application.
 #include <Windows.h>
-#include <iostream>
 #include <detours.h>
 extern "C" {
     __declspec(dllexport) bool Inject(DWORD pid, LPCSTR* dllPath)
@@ -11,7 +9,6 @@ extern "C" {
             return false;
         }
 
-        // Inject the DLL using Detours
         if (!DetourUpdateProcessWithDll(hProcess, dllPath, 1))
         {
             CloseHandle(hProcess);
@@ -37,4 +34,5 @@ BOOL APIENTRY DllMain( HMODULE hModule,
     }
     return TRUE;
 }
+
 
