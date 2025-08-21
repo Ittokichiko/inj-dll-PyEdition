@@ -10,6 +10,7 @@ def main():
         if proc.info['name'] == procname:
             pid = proc.info['pid']
             injector.Inject(pid, bytes("{}".format(input_dllname), "utf-8"))
+            ex_function(322)
         else:
             raise Exception("Not Founded {}".format(proc.info['name']))
 
@@ -17,3 +18,4 @@ if __name__ == "__main__":
 
     main()
     ex_function(344)
+
